@@ -1,0 +1,73 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(-45deg, rgba(97,114,200,1) 0%, rgba(210,114,222,1) 64%, rgba(231,143,182,1) 86%);
+
+    position: relative;
+    
+        
+    >h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        font-size:12vw;
+        animation-name: h2;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        &:nth-of-type(2){
+            animation-delay: 3s;
+        }
+        &:nth-of-type(3){
+            animation-delay: 6s;
+        }
+        &:nth-of-type(4){
+            animation-delay: 9s;
+        }
+        
+
+    }
+    
+}
+@keyframes h2 {
+    0%{
+        opacity: 0;
+        filter: blur(6px);
+        transform: translate(-50%,-50%) scale(2.5);
+
+    }
+    25%{
+        opacity: 0;
+        filter: blur(6px);
+        transform: translate(-50%,-50%) scale(2.5);
+
+    }
+    50%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(-50%,-50%) scale(1);
+
+    }
+    70%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(-50%,-50%) scale(1);
+
+    }
+    100%{
+        opacity: 0;
+        filter: blur(6px);
+        transform: translate(-50%,-50%) scale(0);
+
+    }
+    
+}
