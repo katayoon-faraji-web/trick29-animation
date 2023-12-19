@@ -1,5 +1,5 @@
 # trick29-animation
-- [Demo Project](https://katayoon-faraji-web.github.io/trick28-passwordGenerator//)
+- [Demo Project](https://katayoon-faraji-web.github.io/trick29-animation/)
 
 - Developed by katayoon faraji
 
